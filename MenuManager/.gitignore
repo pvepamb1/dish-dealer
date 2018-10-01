@@ -6,10 +6,8 @@ bin/
 ### STS ###
 .apt_generated
 .factorypath
-.settings
 .springBeans
 .sts4-cache
-.classpath
 
 ### IntelliJ IDEA ###
 .idea
