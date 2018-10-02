@@ -1,0 +1,6 @@
+language: java
+before_install: cd MenuManager && chmod +x gradlew
+branches:
+  only:
+    - master
+script: "./gradlew build --info"
