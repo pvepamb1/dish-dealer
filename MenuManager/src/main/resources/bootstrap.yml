@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    config:
+      failFast: true
+      server:
+        bootstrap: true
+        git:
+          uri: https://github.com/pvepamb1/menu-manager-config.git
+  profiles:
+    active: ${ENV}
