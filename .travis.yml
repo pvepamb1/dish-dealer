@@ -1,9 +1,11 @@
 language: java
-script: if [ ${TRAVIS_BRANCH} == develop ]; then
+script:
+  - |
+  if [ ${TRAVIS_BRANCH} == develop ]; then
     ENV=dev
-else
+  else
     ENV=prod
-fi
+  fi
 
 export ENV
 before_install: cd MenuManager && chmod +x gradlew
