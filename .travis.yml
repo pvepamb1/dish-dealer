@@ -1,10 +1,4 @@
 language: java
-before_script:
-  if [ ${TRAVIS_BRANCH} == "develop" ]; then
-    ENV=dev
-  else
-    ENV=prod
-  fi
-  export ENV
+before_script: bash setenv.sh
 before_install: cd MenuManager && chmod +x gradlew
 script: "./gradlew build --info"
