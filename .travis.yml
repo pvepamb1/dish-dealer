@@ -1,6 +1,5 @@
 language: java
 before_script:
-  - |
   if [ ${TRAVIS_BRANCH} == develop ]; then
     ENV=dev
   else
