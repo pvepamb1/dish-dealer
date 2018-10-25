@@ -6,5 +6,7 @@ spring:
         bootstrap: true
         git:
           uri: https://github.com/pvepamb1/menu-manager-config.git
+          username: ${GITUSER}
+          password: ${GITPASS}
   profiles:
     active: ${ENV}
